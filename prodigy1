@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #333;
+            transition: background 0.3s ease-in-out;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .scrolled {
+            background: #222;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Scroll down to see the effect!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis urna. Praesent ultricies dapibus arcu, at blandit elit bibendum in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer vel turpis purus. Integer at diam ut mi facilisis feugiat. Nulla facilisi. Nam in enim nec tortor pulvinar sollicitudin in in augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>Phasellus porta dolor nec urna fermentum, nec fermentum tortor pretium. Proin iaculis nisl eget metus pulvinar, ac viverra nulla blandit. Nulla et massa a justo commodo hendrerit. Morbi tincidunt, velit vel tincidunt fringilla, nunc odio luctus sem, sit amet hendrerit turpis elit id massa. Etiam nec arcu quis tortor sodales commodo. Suspendisse potenti. Suspendisse potenti. Etiam dapibus leo quis odio tincidunt, eget porta odio fringilla.</p>
+        <p>Scroll more to see the nav bar effect in action!</p>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            var navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+</html>
