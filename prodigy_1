@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Interactive Navigation Menu</title>    <link rel="stylesheet" href="styles.css">    <style>        /* Base styles */        body {            margin: 0;            font-family: Arial, sans-serif;        }        /* Fixed navigation bar */        nav {            position: fixed;            top: 0;            width: 100%;            background: #333;            transition: background 0.3s ease-in-out;            padding: 10px 0;        }        nav ul {            list-style: none;            text-align: center;            padding: 0;            margin: 0;        }        nav ul li {            display: inline;            margin: 0 15px;        }        nav ul li a {            text-decoration: none;            color: white;            font-size: 18px;            transition: color 0.3s ease-in-out;        }        /* Hover effect */        nav ul li a:hover {            color: #FFD700;        }        /* Change background color on scroll */        .scrolled {            background: #222;        }    </style></head><body>    <nav id="navbar">        <ul>            <li><a href="#">Home</a></li>            <li><a href="#">About</a></li>            <li><a href="#">Services</a></li>            <li><a href="#">Contact</a></li>        </ul>    </nav>    <div class="content" style="margin-top: 60px; padding: 20px;">        <h1>Scroll down to see the effect!</h1>        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>    </div>    <script>        window.addEventListener("scroll", function() {            var navbar = document.getElementById("navbar");            if (window.scrollY > 50) {                navbar.classList.add("scrolled");            } else {                navbar.classList.remove("scrolled");            }        });    </script></body></html>0 commit commentsComments0 (0)Please sign in to comment.  {"resolvedServerColorMode":"day"}
+
+
+
+
+
+  
+
+
+
+    
+  
+
+  
+
+          
+  Footer
+
+  
+
+
+  
+    
+      
+        
+    
+
+
+      
+        © 2025 GitHub, Inc.
+      
+    
+
+    
+      Footer navigation
+
+      
+
+          
+            Terms
+          
+
+          
+            Privacy
+          
+
+          
+            Security
+          
+
+          
+            Status
+          
+
+          
+            Docs
+          
+
+          
+            Contact
+          
+
+          
+  
+    
+       Manage cookies
+    
+  
+
+
+
+  
+    
+      Do not share my personal information
+    
+  
+
+
+      
+    
+  
+
+
+
+
+    
+
+
+
+  
+    
+    
+
+    
+      
+    
+
+    
+    You can’t perform that action at this time.
+  
+
+    
+
+    
+  
+
+
+    
+
+
+
+
+
+    
